@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
 const MobileNav = () => {
-  return <nav className='text-3xl cursor-pointer'>
+  return <nav className='text-3xl cursor-pointer lg:hidden'>
     <CgMenuRight />
 
     <div className="absolute right-0 top-0 w-full max-w-xs z-20 bg-white h-screen">
@@ -18,7 +18,7 @@ const MobileNav = () => {
       </div>
 
 {/* Mobile Mene */}
-      <ul className='h-full flex flex-col items-center justify-center text-[#696A6D] hover:text-primary transition font-bold font-primary text-3xl gap-y-12'>
+      <ul className='h-full flex  flex-col items-center justify-center text-[#696A6D] hover:text-primary transition font-bold font-primary text-3xl gap-y-12'>
         <li><Link to={'/'}>Home</Link></li>
         <li><Link to={'/portfolio'}>Portfolio</Link></li>
         <li><Link to={'/about'}>About</Link></li>
